@@ -6,6 +6,7 @@ interface NFTCardProps {
     title: string;
     color: string;
     style: string;
+    content: any;
 }
 
 interface TeamMemberCardProps {
@@ -22,8 +23,9 @@ export const NFTCard: React.FunctionComponent<NFTCardProps> = (props) => {
             <Card.Body className="position-absolute bottom-0 w-100 p-3">
                 <div className={`bg-${props.color}-2 text-white py-2 px-3 rounded-3`}>
                     <Card.Title className="fs-1 text-center fw-bold mb-2">{props.title}</Card.Title>
-                    <Card.Text className="fw-medium mb-0">$5/month</Card.Text>
-                    <Card.Text className="fw-medium">5% accumulation</Card.Text>
+                    {props.content && props.content.map((key: any) => (
+                        <Card.Text className="fw-medium mb-0" key={key}>{key}</Card.Text>
+                    ))}
                 </div>
             </Card.Body>
             <div className="text-center w-100 position-absolute button-section">

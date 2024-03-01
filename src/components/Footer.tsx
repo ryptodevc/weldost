@@ -11,7 +11,7 @@ function Footer() {
 
     return (
         <div className="Footer">
-            <Container className="text-center text-lg-start text-white">
+            <Container className="text-center text-lg-start text-white my-5">
                 <Row>
                     <Col xs={12} sm={12} md={6} lg={3} className="mb-3">
                         <div className="fs-4 mb-4 fw-medium">Marketplace</div>

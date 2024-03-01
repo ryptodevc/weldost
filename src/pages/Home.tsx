@@ -1,5 +1,5 @@
-import React from 'react';
-import { Col, Container, Row, Image, Button, Accordion, Card } from 'react-bootstrap';
+import React, { useState }from 'react';
+import { Col, Container, Row, Image, Button, Accordion, Card, Modal, ModalBody } from 'react-bootstrap';
 import MainBanner from '../assets/images/banners/main.svg';
 import BuyNftBanner from '../assets/images/banners/buy-nft.svg';
 import StakeNftBanner from '../assets/images/banners/stake-nft.svg';
@@ -14,22 +14,48 @@ import Bg from '../assets/images/banners/bg.svg';
 import { NFTCard, TeamMemberCard } from '../components/Card';
 import FaqBanner from '../assets/images/banners/faq.svg';
 import { NftCardData, TeamMemberData } from '../utils/contents';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import 'react-vertical-timeline-component/style.min.css';
 
 function HomePage() {
+
+  const [show, setShow] = useState(true);
+
     return (
         <div className="HomePage">
             <Container>
+                <Modal show={show} centered animation>
+                    <Modal.Header>
+                        <h4>Important Note:</h4>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <b>
+                            While we can assist you in claiming WELDOST tokens in the unfortunate event of your wallet being compromised or hacked, it's crucial to understand that we cannot recover lost funds. Protecting your assets remains a top priority.
+                        </b>
+                        <h5 className='mt-3'>
+                            Beware of Scammers: 
+                        </h5>
+                        <b>
+                            Remember that we will never ask for your private details, such as your Seed Phrase or Private Key. Be cautious of potential scams and always verify the authenticity of the support you're engaging with.
+                            Also always make sure you are on <Link to="https://weldost.com" target="_blank">weldost.com</Link> site when engaging.
+                        </b>
+                        <p className='mt-2'>
+                             Any questions you may have feel free to contact us!
+                        </p>
+                        <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' onClick={()=>setShow(false)}>
+                            Confirm
+                        </Button>
+                    </Modal.Body>
+                </Modal>
                 <section className='py-5'>
                     <Row className='text-center text-lg-start'>
                         <Col sm={12} md={12} lg={6} className='mb-3'>
                             <h1 className='text-uppercase text-white  fs-1 mb-3'>the journey between worlds</h1>
                             <div className='text-uppercase text-white mb-3 section-title'><span className='text-primary-1'>Travel</span> & <span className='text-secondary-1'>Earn</span></div>
-                            <p className='text-white mb-5 fs-5'>We connect the two worlds in a unique and innovative way. We focus on travel, construction, real estate, hospitality, passenger transportation and products. Online WMPs, Apps, Cryptocurrency, Blockchain, Gaming. In the year 2023, one of the most important driving forces of the project was the modernization of NFTs. We were the first in the world to combine travel with NFT.</p>
+                            <p className='text-white mb-5 fs-5'>The Weldost project is a subsidiary of the software development company Invis Consultancy Ltd, which is active both offline and online. We connect the two worlds in a unique and innovative way. Offline, we focus on travel, construction real estate, hospitality, passenger transportation and products. Online WMPs, Apps, Cryptocurrency, Blockchain, Gaming. In the year 2023, one of the most important driving forces of the project was the modernization of NFTs. We were the first in the world to combine travel with NFT. Our goal was to further  develop NFTs and provide them with a unique function. </p>
                             <div className='text-start text-center text-lg-start'>
-                                <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5'>Dapp</Button>
-                                <Button className='bg-transparent rounded-4 border-1 border-secondary-1 text-white px-3 me-3 fs-5 presale-btn position-relative'>Join our Presale</Button>
+                                <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' href="/">Dapp</Button>
+                                <Button className='bg-transparent rounded-4 border-1 border-secondary-1 text-white px-3 me-3 fs-5 presale-btn position-relative' href='https://presale.weldost.com/'>Join Presale</Button>
                             </div>
                         </Col>
                         <Col sm={12} md={12} lg={6} className='mb-3 overflow-hidden'>
@@ -37,10 +63,10 @@ function HomePage() {
                         </Col>
                     </Row>
                     <Row className='align-items-end pt-5'>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/buy_nft" className="sublink-item"><Image src={BuyNftBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/buy_nft" className="sublink-item"><Image src={StakeNftBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/buy_nft" className="sublink-item"><Image src={BuyWmtBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/buy_nft" className="sublink-item"><Image src={StakeWmtBanner} width="100%" alt='banner' /></NavLink></Col>
+                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={BuyNftBanner} width="100%" alt='banner' /></NavLink></Col>
+                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={StakeNftBanner} width="100%" alt='banner' /></NavLink></Col>
+                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={BuyWmtBanner} width="100%" alt='banner' /></NavLink></Col>
+                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={StakeWmtBanner} width="100%" alt='banner' /></NavLink></Col>
                     </Row>
                 </section>
                 <section>
@@ -84,7 +110,7 @@ function HomePage() {
                     </Row>
                 </section>
                 <section className='text-center text-lg-start text-white'>
-                    <div className='section-title  text-primary-1 mb-2'>NFTs</div>
+                    <div className='section-title  text-primary-1 mb-5'>NFTs</div>
                     <Row>
                         <Col sm={12} lg={8}>
                             <div className='fs-5 mb-3'>The NFTs we have issued have their own unique properties. We are modernizing the use of NFTs. They can be used continuously in different areas which we offer. Also We keep their values stable regardless of Ethereum price movement.</div>
@@ -94,11 +120,21 @@ function HomePage() {
                         {
                             NftCardData.map((item, index) => (
                                 <Col sm={12} lg={4} className='mb-5' key={index}>
-                                    <NFTCard image={item.image} title={item.title} color={item.color} style={item.style} />
+                                    <NFTCard image={item.image} title={item.title} color={item.color} style={item.style} content={item.content}/>
                                 </Col>
                             ))
                         }
                     </Row>
+                </section>
+                <section className='text-center text-lg-start text-white pb-5 mt-5'>
+                    <div className='section-title  text-white-1 mb-2'><span className='text-secondary-1'>Partner programs</span></div>
+                    <Row className='py-3 my-3'>
+                        <Col>
+                            <h1>PARTNERSHIP WMP</h1>
+                            <div className='fs-5 mb-3'>WMPs that we offer to new partners after an agreement has been reached on our cooperation. It's a vacation and a personal meeting with us at the same time. Available up to 5 people so bring your family and/or friends. Our chalet located in beautiful Mayrhofen ski resort in Zillertal Austria. Various programs including dinner for five people at one of the great restaurant the town can offer. Please refer to our properties for more details.</div>
+                        </Col>
+                    </Row>
+
                 </section>
                 <section className='text-center text-lg-start text-white'>
                     <div className='section-title  text-white-1 mb-2'>Meet our <span className='text-secondary-1'>Team</span></div>
@@ -110,74 +146,14 @@ function HomePage() {
                     <Row className='justify-content-center'>
                         {
                             TeamMemberData.map((item, index) => (
-                                <Col sm={12} md={6} lg={4}>
+                                <Col sm={12} md={6} lg={4} key={index}>
                                     <TeamMemberCard photo={item.photo} name={item.name} role={item.role} description={item.description} />
                                 </Col>
                             ))
                         }
                     </Row>
                 </section>
-                <section className='text-center text-lg-start text-white'>
-                    <div className='section-title  text-white-1 mb-2'>Still have <span className='text-primary-1'>question?</span></div>
-                    <Row>
-                        <Col sm={12} lg={9} className='mb-5'>
-                            <Accordion defaultActiveKey="0" className='bg-transparent border-0 text-white'>
-                                <Accordion.Item eventKey="0" className='bg-transparent border-0 text-white'>
-                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How would you begin a <span className='text-secondary-1 mx-2'>not-for-profit</span> organization?</div></Accordion.Header>
-                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1" className='bg-transparent border-0 text-white'>
-                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>What is a <span className='text-secondary-1 mx-2'>public</span> foundation?</div></Accordion.Header>
-                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="2" className='bg-transparent border-0 text-white'>
-                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How would I choose what <span className='text-secondary-1 mx-2'>not-for-profit</span> to give to?</div></Accordion.Header>
-                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="3" className='bg-transparent border-0 text-white'>
-                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>What is our <span className='text-secondary-1 mx-2'>story?</span></div></Accordion.Header>
-                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </Col>
-                        <Col sm={12} lg={3} className='d-none d-lg-block'>
-                            <Image src={FaqBanner} width="100%" alt='banner' />
-                        </Col>
-                    </Row>
-                </section>
-                <section className='text-center text-lg-start text-white pb-5'>
+                <section className='text-center text-lg-start text-white pb-5 mt-5'>
                     <div className='section-title  text-white-1 mb-2'><span className='text-secondary-1'>Roadmap</span></div>
                     <Row className='py-5 my-5'>
                         <Col>
@@ -187,55 +163,99 @@ function HomePage() {
                                     <div className="timeline-article timeline-article-bottom">
                                         <div className="meta-date"></div>
                                         <div className="content-box">
-                                            <div className='fs-5 fw-medium'>November 12th, 2024</div>
-                                            <div>Weldost Token Launch</div>
-                                            <div>Weldost Token Staking Pool</div>
-                                            <div>Weldost Token Liquidity Pool</div>
-                                            <div>Coinmarketcap</div>
+                                            <div className='fs-5 fw-medium'>Q1 2024</div>
+                                            <div>WELDOST TOKEN PRESALE</div>
+                                            <div>WELDOST MULTIFUNCTIONAL PASS</div>
+                                            <div>LIMITED WMP PASS</div>
+                                            <div>FIRST WMP COLLECTION</div>
                                         </div>
                                     </div>
-
                                     <div className="timeline-article timeline-article-top">
                                         <div className="meta-date"></div>
                                         <div className="content-box">
-                                            <div className='fs-5 fw-medium'>December 12th, 2024</div>
-                                            <div>Weldost Token Launch</div>
-                                            <div>Weldost Token Staking Pool</div>
-                                            <div>Weldost Token Liquidity Pool</div>
-                                            <div>Coinmarketcap</div>
+                                            <div className='fs-5 fw-medium'>Q2 2024</div>
+                                            <div>WELDOST TOKEN LAUNCH</div>
+                                            <div>WELDOST TOKEN STAKING POOL</div>
+                                            <div>WELDOST TOKEN LIQUIDITY POOL</div>
+                                            <div>WELDOST SWAP</div>
+                                            <div>WELDOST DAPP</div>
+                                            <div>COINMARKETCAP</div>
+                                            <div>COINGECO</div>
+                                            <div>EXCHANGE LISTING</div>
                                         </div>
                                     </div>
                                     <div className="timeline-article timeline-article-bottom">
                                         <div className="meta-date"></div>
                                         <div className="content-box">
-                                            <div className='fs-5 fw-medium'>December 12th, 2024</div>
-                                            <div>Weldost Token Launch</div>
-                                            <div>Weldost Token Staking Pool</div>
-                                            <div>Weldost Token Liquidity Pool</div>
-                                            <div>Coinmarketcap</div>
+                                            <div className='fs-5 fw-medium'>Q3 2024</div>
+                                            <div>WELDOST PRODUCT</div>
+                                            <div>SECOND WMP COLLECTION</div>
+                                            <div>EXCHANGE LISTING</div>
                                         </div>
                                     </div>
-
                                     <div className="timeline-article timeline-article-top">
                                         <div className="meta-date"></div>
                                         <div className="content-box">
-                                            <div className='fs-5 fw-medium'>November 12th, 2024</div>
-                                            <div>Weldost Token Launch</div>
-                                            <div>Weldost Token Staking Pool</div>
-                                            <div>Weldost Token Liquidity Pool</div>
-                                            <div>Coinmarketcap</div>
+                                            <div className='fs-5 fw-medium'>Q4 2024</div>
+                                            <div>WELDOST GAME</div>
+                                            <div>EXCHANGE LISTING</div>
                                         </div>
                                     </div>
                                 </div>
                             </section>
                         </Col>
                     </Row>
+
+                </section>
+                <section className='text-center text-lg-start text-white mt-5'>
+                    <div className='section-title  text-white-1 mb-2'>Still have <span className='text-primary-1'>question?</span></div>
                     <Row>
-                        <Col className='mb-5'>
+                        <Col sm={12} lg={9} className='mb-5'>
+                            <Accordion defaultActiveKey="0" className='bg-transparent border-0 text-white'>
+                                <Accordion.Item eventKey="0" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>Why this project is <span className='text-secondary-1 mx-2'>unique</span> by Weldost?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        This project is the first in the world to connect the offline and digital worlds in an unique way. Your NFT (WMP) acting as a pass to travel and earn bonus at the same time and not losing values like many other NFT s on market.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="1" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How does the <span className='text-secondary-1 mx-2'>staking pool</span>works?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        WELDOST NFT  (WMP) owners can stake their PASS in the staking pool for 36 months, these yields passive income every 30 days.  Each WELDOST NFT brings different bonuses based on their value. Please refer to whitepaper for detailed percentage.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>What will happen to my NFTs after they have <span className='text-secondary-1 mx-2'>expired</span>(in 36 months)?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        After expiration it can be used for various things for examples games and tournaments. Also you can repurchase and stake it for another 36 months and/or use it for travel to one of our holiday destinations. ( We will be adding more in the future)
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="3" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>Why should I buy <span className='text-secondary-1 mx-2'>Weldost travel NFT pass?</span></div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        Very straightforward. You can travel to one of our properties (more property will be added in the future) and share it with family or friends. Participate in various programs organized by Weldost. Stake it and earn bonus every month in USDT. Refer to our whitepaper please for details.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="4" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>My wallet is <span className='text-secondary-1 mx-2'>compromised/hacked</span>, What should I do?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                    If you suspect that your wallet has been compromised, it's essential to take immediate action to protect your assets. Please follow these steps:
+Never Share Your Seed Phrase or Private Key: Under no circumstances should you share your Seed Phrase or Private Key with anyone. These are sensitive and should be kept secure.
+Contact Us: Reach out to us at: contact@weldost.com to report the issue and seek guidance on how to proceed.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
+                        </Col>
+                        <Col sm={12} lg={3} className='d-none d-lg-block'>
+                            <Image src={FaqBanner} width="100%" alt='banner' />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className='mb-5 mt-5'>
                             <Card className='bg-primary-1 text-center ExploreCard rounded-5'>
                                 <Card.Body>
                                     <Card.Title className='fw-medium mb-2 text-white mb-3'>Be a part of <span className='text-secondary-1'> WELDOST </span> and let's travel together into the <span className='text-secondary-1'> future! </span></Card.Title>
-                                    <Button className='bg-white text-primary-1 fs-4 rounded-5 border-0'>Explore our Presale</Button>
+                                    <Button className='bg-white text-primary-1 fs-4 rounded-5 border-0 px-5 py-2' href="https://weldost.com/whitepaper.pdf" target="_blank">Read Our Whitepaper</Button>
                                 </Card.Body>
                             </Card>
                         </Col>

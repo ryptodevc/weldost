@@ -12,12 +12,12 @@ import TeamMember6 from '../assets/images/team/6.png';
 import TeamMember4 from '../assets/images/team/7.png';
 
 export const NftCardData = [
-    { image: NFTCardImage1, style: 'mt-md-5', title: "Starter $100", color: "primary" },
-    { image: NFTCardImage2, style: '', title: "Bronze $500", color: "secondary" },
-    { image: NFTCardImage3, style: 'mt-md-5', title: "Silver $1000", color: "primary" },
-    { image: NFTCardImage4, style: 'mt-md-5', title: "Gold $1500", color: "secondary" },
-    { image: NFTCardImage5, style: '', title: "Silver $2500", color: "primary" },
-    { image: NFTCardImage6, style: 'mt-md-5', title: "Elite $5000", color: "secondary" },
+    { image: NFTCardImage1, style: 'mt-md-5', title: "Starter $100", color: "primary", content:['$25/month', '5% accumulation']},
+    { image: NFTCardImage2, style: '', title: "Bronze $500", color: "secondary", content:['$25/month', '5% accumulation','2 days accomodation/4 people']},
+    { image: NFTCardImage3, style: 'mt-md-5', title: "Silver $1000", color: "primary", content:['$50/month', '5% accumulation','3 days accomodation/5 people', 'Various programs included'] },
+    { image: NFTCardImage4, style: 'mt-md-5', title: "Gold $1500", color: "secondary", content:['$75/month', '5% accumulation','4 days accomodation/5 people', 'Various programs included']},
+    { image: NFTCardImage5, style: '', title: "Silver $2500", color: "primary", content:['$125/month', '5% accumulation','5 days accomodation/6 people', 'Various programs included']},
+    { image: NFTCardImage6, style: 'mt-md-5', title: "Elite $5000", color: "secondary", content:['$250/month', '5% accumulation','7 days accomodation/6 people', 'Various programs included']},
 ];
 
 export const TeamMemberData = [
