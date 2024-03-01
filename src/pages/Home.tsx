@@ -63,10 +63,28 @@ function HomePage() {
                         </Col>
                     </Row>
                     <Row className='align-items-end pt-5'>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={BuyNftBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={StakeNftBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={BuyWmtBanner} width="100%" alt='banner' /></NavLink></Col>
-                        <Col sm={12} lg={6} className='mb-3'><NavLink to="/mint" className="sublink-item"><Image src={StakeWmtBanner} width="100%" alt='banner' /></NavLink></Col>
+                        <Col sm={12} lg={6} className='mb-3'>
+                            <NavLink to="/mint" className="sublink-item">
+                                <Image src={BuyNftBanner} width="100%" alt='banner' />
+                            </NavLink>
+                        </Col>
+                        <Col sm={12} lg={6} className='mb-3'>
+                            <NavLink to="/mint" className="sublink-item">
+                                <Image src={StakeNftBanner} width="100%" alt='banner' />
+                            </NavLink>
+                        </Col>
+                        <Col sm={12} lg={6} className='mb-3'>
+                            <NavLink to="" className="comingsoon">
+                                <Image src={BuyWmtBanner} width="100%" alt='banner' />
+                                <p className='p1'>Coming Soon</p>
+                            </NavLink>
+                        </Col>
+                        <Col sm={12} lg={6} className='mb-3'>
+                            <NavLink to="" className="comingsoon">
+                                <Image src={StakeWmtBanner} width="100%" alt='banner' />
+                                <p className='p2'>Coming Soon</p>
+                            </NavLink>
+                        </Col>
                     </Row>
                 </section>
                 <section>

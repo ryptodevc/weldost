@@ -184,7 +184,7 @@ button {
 
 @keyframes animation2 {
   0% {transform: scale(1)}
-  50% {transform: scale(1.2)}
+  50% {transform: scale(1.1)}
   100% {transform: scale(1)}
 }
 
@@ -195,6 +195,34 @@ button {
   animation-duration: 1s;
   transition: 1s;
 }
+
+.comingsoon img{
+  opacity: 0.5;
+}
+
+.comingsoon {
+  position: relative;
+}
+
+.comingsoon p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: rotate(-20deg); */
+  transform: translate(-50%, -50%);
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+
+/* .comingsoon .p1{
+  top: -50%;
+  left: 20%;
+}
+
+.comingsoon .p2{
+  top: -120%;
+  left: 22%;
+} */
 
 .sublink-item:hover img {
   transform: scale(1);

@@ -68,12 +68,12 @@ function Footer() {
                         <Image src={LogoCrop}  width={360} alt="logo"/>
                     </Col>
                     <Col lg={12} className="d-flex align-items-center justify-content-center my-5">
-                        <NavLink to="https://www.facebook.com/profile.php?id=61551065162435" target="_blank" className="nav-link mx-4"><Image src={FacebookIcon} width={30} alt="social" /></NavLink>
-                        <NavLink to="https://twitter.com/WELDOSTGLOBAL?t=OEzRVkKCL0btr_uBMMeCPQ&s=07&fbclid=IwAR3OVNdMRfb7Vz1wgcfHM_Foyo6j46fS6XTVSCjn0o8kpRywzPdNJHfWVhI" target="_blank" className="nav-link mx-4"><Image src={TwitterIcon} width={30} alt="social" /></NavLink>
-                        <NavLink to="https://instagram.com/weldost?igshid=MzRlODBiNWFlZA==" target="_blank" className="nav-link mx-4"><Image src={InstagramIcon} width={30} alt="social" /></NavLink>
-                        <NavLink to="https://www.youtube.com/@WELDOST" target="_blank" className="nav-link mx-4"><Image src={YoutubeIcon} width={30} alt="social" /></NavLink>
-                        <NavLink to="http://www.tiktok.com/@weldostglobal" target="_blank" className="nav-link mx-4"><Image src={RedditIcon} width={30} alt="social" /></NavLink>
-                        <NavLink to="https://www.reddit.com/u/WELDOST?utm_medium=android_app&utm_source=sharehttps://instagram.com/weldost?igshid=MzRlODBiNWFlZA==" target="_blank" className="nav-link mx-4"><Image src={TiktokIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="https://www.facebook.com/profile.php?id=61551065162435" target="_blank" className="nav-link mx-3"><Image src={FacebookIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="https://twitter.com/WELDOSTGLOBAL?t=OEzRVkKCL0btr_uBMMeCPQ&s=07&fbclid=IwAR3OVNdMRfb7Vz1wgcfHM_Foyo6j46fS6XTVSCjn0o8kpRywzPdNJHfWVhI" target="_blank" className="nav-link mx-3"><Image src={TwitterIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="https://instagram.com/weldost?igshid=MzRlODBiNWFlZA==" target="_blank" className="nav-link mx-3"><Image src={InstagramIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="https://www.youtube.com/@WELDOST" target="_blank" className="nav-link mx-3"><Image src={YoutubeIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="http://www.tiktok.com/@weldostglobal" target="_blank" className="nav-link mx-3"><Image src={RedditIcon} width={30} alt="social" /></NavLink>
+                        <NavLink to="https://www.reddit.com/u/WELDOST?utm_medium=android_app&utm_source=sharehttps://instagram.com/weldost?igshid=MzRlODBiNWFlZA==" target="_blank" className="nav-link mx-3"><Image src={TiktokIcon} width={30} alt="social" /></NavLink>
                     </Col>
                     <Col sm={12} lg={12} className="text-center">
                         <span className="fs-5">Copyright © 2024. All Rights Reserved by Weldost</span>
