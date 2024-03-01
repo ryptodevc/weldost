@@ -250,16 +250,6 @@ Contact Us: Reach out to us at: contact@weldost.com to report the issue and seek
                             <Image src={FaqBanner} width="100%" alt='banner' />
                         </Col>
                     </Row>
-                    <Row>
-                        <Col className='mb-5 mt-5'>
-                            <Card className='bg-primary-1 text-center ExploreCard rounded-5'>
-                                <Card.Body>
-                                    <Card.Title className='fw-medium mb-2 text-white mb-3'>Be a part of <span className='text-secondary-1'> WELDOST </span> and let's travel together into the <span className='text-secondary-1'> future! </span></Card.Title>
-                                    <Button className='bg-white text-primary-1 fs-4 rounded-5 border-0 px-5 py-2' href="https://weldost.com/whitepaper.pdf" target="_blank">Read Our Whitepaper</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
                 </section>
             </Container>
         </div>
