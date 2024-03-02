@@ -1,5 +1,4 @@
-import { Button, Col, Container, FormControl, Image, Row, Card } from "react-bootstrap";
-import Logo from '../assets/images/logo.svg';
+import { Button, Col, Container, Image, Row, Card } from "react-bootstrap";
 import LogoCrop from '../assets/images/logoCrop.png';
 import { NavLink } from "react-router-dom";
 import FacebookIcon from '../assets/images/icons/facebook-f.svg';
@@ -19,8 +18,8 @@ function Footer() {
                         <Card className='bg-primary-1 text-center ExploreCard rounded-5'>
                             <Card.Body className='p-5'>
                                 <Card.Title className='fw-medium mb-2 text-white mb-3'>Get in <span className='text-secondary-1'>touch</span> with us</Card.Title>
-                                <Button className='bg-primary-1 text-white fs-5 rounded-5 border-1 border-white px-4 py-2 mx-1' href="https://t.me/weldost" target="_blank">Our Telegram</Button>
-                                <Button className='bg-white text-primary-1 fs-5 rounded-5 border-0 px-4 py-2 mx-1' href="mailto:contact@weldost.com" target="_blank">Email Us</Button>
+                                <Button className='bg-primary-1 text-white fs-5 rounded-5 border-1 border-white px-4 py-2 m-1' href="https://t.me/weldost" target="_blank">Our Telegram</Button>
+                                <Button className='bg-white text-primary-1 fs-5 rounded-5 border-0 px-4 py-2 m-1' href="mailto:contact@weldost.com" target="_blank">Email Us</Button>
                             </Card.Body>
                         </Card>
                     </Col>

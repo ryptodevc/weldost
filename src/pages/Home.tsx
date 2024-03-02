@@ -223,7 +223,6 @@ function HomePage() {
                             </section>
                         </Col>
                     </Row>
-
                 </section>
                 <section className='text-center text-lg-start text-white mt-5'>
                     <div className='section-title  text-white-1 mb-2'>Still have <span className='text-primary-1'>question?</span></div>
