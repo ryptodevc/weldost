@@ -12,7 +12,7 @@ import TeamMember6 from '../assets/images/team/6.png';
 import TeamMember4 from '../assets/images/team/7.png';
 
 export const NftCardData = [
-    { image: NFTCardImage1, style: 'mt-md-5', title: "Starter $100", color: "primary", content:['$25/month', '5% accumulation']},
+    { image: NFTCardImage1, style: 'mt-md-5', title: "Starter $100", color: "primary", content:['$5/month', '5% accumulation']},
     { image: NFTCardImage2, style: '', title: "Bronze $500", color: "secondary", content:['$25/month', '5% accumulation','2 days accomodation/4 people']},
     { image: NFTCardImage3, style: 'mt-md-5', title: "Silver $1000", color: "primary", content:['$50/month', '5% accumulation','3 days accomodation/5 people', 'Various programs included'] },
     { image: NFTCardImage4, style: 'mt-md-5', title: "Gold $1500", color: "secondary", content:['$75/month', '5% accumulation','4 days accomodation/5 people', 'Various programs included']},
