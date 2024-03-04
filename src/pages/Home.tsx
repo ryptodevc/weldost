@@ -261,6 +261,48 @@ Never Share Your Seed Phrase or Private Key: Under no circumstances should you s
 Contact Us: Reach out to us at: contact@weldost.com to report the issue and seek guidance on how to proceed.
                                     </Accordion.Body>
                                 </Accordion.Item>
+                                <Accordion.Item eventKey="5" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How much is <span className='text-secondary-1 mx-2'>affiliate compensated?</span></div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        10%  of the values of any NFT pass, transfered to you in USDT. Read our whitepaper please for more information.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="6" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>What is <span className='text-secondary-1 mx-2'>affiliate NFT PASS?</span></div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        Our NFT pass will be implemented in the future for games and/or  sweepstakes. 
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="7" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>In case <span className='text-secondary-1 mx-2'>I cant travel but bought NFT pass</span>, what is your policy?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        No worries, your NFT pass can be sold or utilized for friends/families. In that event contact us please.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="8" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>I staked my <span className='text-secondary-1 mx-2'>NFT PASS for 36 months</span>, what happens after this time limit?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        Your pass expires, by that time you have accumulated enough bonus for your travel expense + profit. Refer to our whitepaper please for more details.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="9" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>What <span className='text-secondary-1 mx-2'>wallet</span> should I use to buy tokens?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        We recommend Metamask wallet.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="10" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>Can I use <span className='text-secondary-1 mx-2'>Visa card</span> to purchase NFT/tokens?</div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        Yes, you can use platform for direct buy but we recommend sign up and create and account at one of crypto exchanges to avoid higher fees.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="11" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How to book your <span className='text-secondary-1 mx-2'>accomodation ?</span></div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        Contact us by email when you are ready to travel and bought your pass, We will send you all the informations.
+                                    </Accordion.Body>
+                                </Accordion.Item>
                             </Accordion>
                         </Col>
                         <Col sm={12} lg={3} className='d-none d-lg-block'>
