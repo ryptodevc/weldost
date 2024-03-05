@@ -19,7 +19,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 function HomePage() {
 
-  const [show, setShow] = useState(true);
+    const [show, setShow] = useState(true);
 
     return (
         <div className="HomePage">

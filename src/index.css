@@ -401,3 +401,34 @@ button {
   background: #A3A3A3;
   border: 3px solid #a3a3a315;
 }
+.video-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 56.25%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.preview-container iframe {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.preview, .preview-container iframe {
+  background-color: #fff;
+  border-radius: 15px;
+  height: 100%;
+  max-width: 100%;
+  padding: 20px;
+}
