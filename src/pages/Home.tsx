@@ -173,7 +173,7 @@ function HomePage() {
                 </section>
                 <section className='text-center text-lg-start text-white pb-5 mt-5'>
                     <div className='section-title  text-white-1 mb-2'><span className='text-secondary-1'>Roadmap</span></div>
-                    <Row className='py-5 my-5'>
+                    <Row className='roadmapRow'>
                         <Col>
                             <section className="main-timeline-section">
                                 <div className="conference-center-line"></div>
