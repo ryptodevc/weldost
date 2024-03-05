@@ -64,7 +64,7 @@ function Footer() {
                 </Row> */}
                 <Row className="text-center my-2">
                     <Col lg={12} className="d-flex align-items-center justify-content-center mb-2">
-                        <Image src={LogoCrop}  width={360} alt="logo"/>
+                        <Image src={LogoCrop}  width={320} alt="logo"/>
                     </Col>
                     <Col lg={12} className="d-flex align-items-center justify-content-center my-5">
                         <NavLink to="https://www.facebook.com/profile.php?id=61551065162435" target="_blank" className="nav-link mx-3"><Image src={FacebookIcon} width={30} alt="social" /></NavLink>
