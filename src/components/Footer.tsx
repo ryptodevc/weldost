@@ -7,6 +7,7 @@ import TwitterIcon from '../assets/images/icons/twitter.svg';
 import InstagramIcon from '../assets/images/icons/instagram.svg';
 import RedditIcon from '../assets/images/icons/reddit.svg';
 import TiktokIcon from '../assets/images/icons/tiktok.svg';
+import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
 
@@ -62,6 +63,7 @@ function Footer() {
 
                     </Col>
                 </Row> */}
+                <ScrollToTop smooth />
                 <Row className="text-center my-2">
                     <Col lg={12} className="d-flex align-items-center justify-content-center mb-2">
                         <Image src={LogoCrop}  width={320} alt="logo"/>

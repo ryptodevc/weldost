@@ -1,5 +1,5 @@
-import React, { useState }from 'react';
-import { Col, Container, Row, Image, Button, Accordion, Card, Modal, ModalBody } from 'react-bootstrap';
+import React, { useState, useEffect }from 'react';
+import { Col, Container, Row, Image, Button, Accordion, Modal } from 'react-bootstrap';
 import MainBanner from '../assets/images/banners/main.svg';
 import BuyNftBanner from '../assets/images/banners/buy-nft.svg';
 import StakeNftBanner from '../assets/images/banners/stake-nft.svg';
@@ -20,7 +20,22 @@ import 'react-vertical-timeline-component/style.min.css';
 function HomePage() {
 
     const [show, setShow] = useState(true);
+    const [checked, setChecked] = React.useState(false); 
 
+    useEffect(() => {
+        const notShow = localStorage.getItem('not-show');
+        if(notShow === 'true') {
+            setShow(false);
+        }
+    }, []);
+
+    const handleConfirm = () => {
+        if(checked) {
+            localStorage.setItem('not-show', JSON.stringify(checked));
+        }
+        setShow(false)
+    }
+    console.log('log->isShow', show)
     return (
         <div className="HomePage">
             <Container>
@@ -42,7 +57,11 @@ function HomePage() {
                         <p className='mt-2'>
                              Any questions you may have feel free to contact us!
                         </p>
-                        <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' onClick={()=>setShow(false)}>
+                        <div className='d-flex justify-content-start align-center user-select-none' onClick = { () => setChecked(!checked)}>
+                            <input value='' type = "checkbox"  checked={checked} className='me-1'/>
+                            <p className='m-0'>Don't show this note again.</p>
+                        </div>                        
+                        <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5 float-end' onClick={handleConfirm}>
                             Confirm
                         </Button>
                     </Modal.Body>
