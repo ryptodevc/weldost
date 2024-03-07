@@ -80,8 +80,8 @@ function Footer() {
                         <span className="fs-5">Copyright © 2024. All Rights Reserved by Weldost</span>
                     </Col>
                     <Col sm={12} lg={12} className="d-flex align-items-center justify-content-center">
-                        <NavLink to="/terms" target="_blank" className="nav-link mx-4">Terms & Conditions</NavLink>
-                        <NavLink to="/privacy" target="_blank" className="nav-link mx-4">Privacy Notice</NavLink>
+                        <NavLink to="https://og.weldost.com/terms" target="_blank" className="nav-link mx-4">Terms & Conditions</NavLink>
+                        <NavLink to="https://og.weldost.com/privacy" target="_blank" className="nav-link mx-4">Privacy Notice</NavLink>
                     </Col>
                 </Row>
             </Container>

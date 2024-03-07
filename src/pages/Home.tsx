@@ -73,7 +73,7 @@ function HomePage() {
                             <div className='text-uppercase text-white mb-3 section-title'><span className='text-primary-1'>Travel</span> & <span className='text-secondary-1'>Earn</span></div>
                             <p className='text-white mb-5 fs-5'>The Weldost project is a subsidiary of the software development company Invis Consultancy Ltd, which is active both offline and online. We connect the two worlds in a unique and innovative way. Offline, we focus on travel, construction real estate, hospitality, passenger transportation and products. Online WMPs, Apps, Cryptocurrency, Blockchain, Gaming. In the year 2023, one of the most important driving forces of the project was the modernization of NFTs. We were the first in the world to combine travel with NFT. Our goal was to further  develop NFTs and provide them with a unique function. </p>
                             <div className='text-start text-center text-lg-start'>
-                                <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' href="/">Dapp</Button>
+                                <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' href="https://og.weldost.com/dashboard">Dapp</Button>
                                 <Button className='bg-transparent rounded-4 border-1 border-secondary-1 text-white px-3 me-3 fs-5 presale-btn position-relative' href='https://presale.weldost.com/'>Join Presale</Button>
                             </div>
                         </Col>
@@ -83,12 +83,12 @@ function HomePage() {
                     </Row>
                     <Row className='align-items-end pt-5'>
                         <Col sm={12} lg={6} className='mb-3'>
-                            <NavLink to="/mint" className="sublink-item">
+                            <NavLink to="https://og.weldost.com/mint" className="sublink-item">
                                 <Image src={BuyNftBanner} width="100%" alt='banner' />
                             </NavLink>
                         </Col>
                         <Col sm={12} lg={6} className='mb-3'>
-                            <NavLink to="/mint" className="sublink-item">
+                            <NavLink to="https://og.weldost.com/dashboard" className="sublink-item">
                                 <Image src={StakeNftBanner} width="100%" alt='banner' />
                             </NavLink>
                         </Col>
