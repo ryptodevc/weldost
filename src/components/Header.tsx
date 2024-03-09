@@ -23,7 +23,7 @@ function Header() {
                             <NavLink to="https://weldost.com/whitepaper.pdf" target="_blank" className="nav-link me-lg-3 mx-auto">Whitepaper</NavLink>
                         </Nav>
                         <Nav>
-                            <Button className='d-flex align-items-center rounded-4 justify-content-center bg-primary-1 border-0 fs-5'>Dapp</Button>
+                            <Button className='d-flex align-items-center rounded-4 justify-content-center bg-primary-1 border-0 fs-5' href="https://og.weldost.com/dashboard">Dapp</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

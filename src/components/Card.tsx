@@ -39,7 +39,7 @@ export const TeamMemberCard: React.FunctionComponent<TeamMemberCardProps> = (pro
     return(
         <Card className="border-0 TeamMemberCard mb-5">
             <Card.Body>
-                <Image src={props.photo} width="100%" alt="photo" className="mb-3"/>
+                <Image src={props.photo} width="100%" alt="photo" className="mb-3 rounded-4"/>
                 <Card.Title className="mb-2 text-white fw-bold">{props.name}</Card.Title>
                 <Card.Subtitle className="text-secondary-1">{props.role}</Card.Subtitle>
                 <Card.Text className="text-white">{props.description}</Card.Text>

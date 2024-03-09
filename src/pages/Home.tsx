@@ -10,6 +10,7 @@ import StakingBanner from '../assets/images/banners/stake.png';
 import ReferralBanner from '../assets/images/banners/referral.png';
 import TeamBanner from '../assets/images/banners/team.png';
 import ProgramBanner from '../assets/images/banners/program.png';
+import Affiliate from '../assets/images/affiliate.jpeg';
 import Bg from '../assets/images/banners/bg.svg';
 import { NFTCard, TeamMemberCard } from '../components/Card';
 import FaqBanner from '../assets/images/banners/faq.svg';
@@ -71,7 +72,7 @@ function HomePage() {
                         <Col sm={12} md={12} lg={6} className='mb-3'>
                             <h1 className='text-uppercase text-white  fs-1 mb-3'>the journey between worlds</h1>
                             <div className='text-uppercase text-white mb-3 section-title'><span className='text-primary-1'>Travel</span> & <span className='text-secondary-1'>Earn</span></div>
-                            <p className='text-white mb-5 fs-5'>The Weldost project is a subsidiary of the software development company Invis Consultancy Ltd, which is active both offline and online. We connect the two worlds in a unique and innovative way. Offline, we focus on travel, construction real estate, hospitality, passenger transportation and products. Online WMPs, Apps, Cryptocurrency, Blockchain, Gaming. In the year 2023, one of the most important driving forces of the project was the modernization of NFTs. We were the first in the world to combine travel with NFT. Our goal was to further  develop NFTs and provide them with a unique function. </p>
+                            <p className='text-white mb-5 fs-5'>The Weldost project is a subsidiary of the software development company Inviso Consultancy Ltd, which is active both offline and online. We connect the two worlds in a unique and innovative way. Offline, we focus on travel, construction, real estate, hospitality, passenger transportation and products. Online WMPs, Apps, Cryptocurrency, Blockchain, Gaming. In the year 2023, one of the most important driving forces of the project was the modernization of NFTs. We were the first in the world to combine travel with NFT. Our goal was to further develop NFTs and provide them with a unique function. This is how we created the Weldost Multifunctional Pass, the WMP in 2024. </p>
                             <div className='text-start text-center text-lg-start'>
                                 <Button className='bg-primary-1 rounded-4 border-0 text-white px-3 me-3 fs-5' href="https://og.weldost.com/dashboard">Dapp</Button>
                                 <Button className='bg-transparent rounded-4 border-1 border-secondary-1 text-white px-3 me-3 fs-5 presale-btn position-relative' href='https://presale.weldost.com/'>Join Presale</Button>
@@ -120,7 +121,7 @@ function HomePage() {
                             <div className='position-relative  z-3'>
                                 <Image src={StakingBanner} width={150} height={150} alt='banner' className='mb-2' />
                                 <div className='fs-3 fw-medium text-white mb-2'>Staking</div>
-                                <div className='fs-5 text-white mb-2'>All WMP packages generate 5% income for 36 months</div>
+                                <div className='fs-5 text-white mb-2'>All NFT packages generate 5% income for 36 months</div>
                             </div>
                         </Col>
                         <Col sm={12} lg={4} className='mb-4 text-center advantage-card position-relative' style={{ backgroundImage: `url(${Bg})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
@@ -156,22 +157,30 @@ function HomePage() {
                     <Row className=''>
                         {
                             NftCardData.map((item, index) => (
-                                <Col sm={12} lg={4} className='mb-5' key={index}>
+                                <Col sm={12} lg={4} className='mb-4 px-3' key={index}>
                                     <NFTCard image={item.image} title={item.title} color={item.color} style={item.style} content={item.content}/>
                                 </Col>
                             ))
                         }
                     </Row>
                 </section>
-                <section className='text-center text-lg-start text-white pb-5 mt-5'>
-                    <div className='section-title  text-white-1 mb-2'><span className='text-secondary-1'>Partner programs</span></div>
+                <section className='text-center text-lg-start text-white mt-5'>
                     <Row className='py-3 my-3'>
-                        <Col>
-                            <h1>PARTNERSHIP WMP</h1>
-                            <div className='fs-5 mb-3'>WMPs that we offer to new partners after an agreement has been reached on our cooperation. It's a vacation and a personal meeting with us at the same time. Available up to 5 people so bring your family and/or friends. Our chalet located in beautiful Mayrhofen ski resort in Zillertal Austria. Various programs including dinner for five people at one of the great restaurant the town can offer. Please refer to our properties for more details.</div>
+                        <Col sm={12} md={6} lg={6}>
+                            <div className='section-title  text-white-1 mb-4'><span className='text-secondary-1'>Affiliate</span>  Program</div>
+                            <div className='fs-5 mb-3'>
+                                Register and use the reference link! 
+                                <br/>
+                                For each Weldost NFT purchase, you will receive a 10% USDT reward from the purchased amount who is registered under your reference link.
+                                For every $5,000 single or cumulative sale achieved through your referral link, we will give you a special Affiliate Weldost NFT!
+                            </div>
+                        </Col>
+                        <Col sm={12} md={6} lg={6} className="d-flex align-items-center justify-content-center mb-3">
+                            <div className='fs-5 mb-3'>
+                                <Image src={Affiliate}  width={240} alt="logo" className="rounded-3 mx-3"/>
+                            </div>
                         </Col>
                     </Row>
-
                 </section>
                 <section className='text-center text-lg-start text-white'>
                     <div className='section-title  text-white-1 mb-2'>Meet our <span className='text-secondary-1'>Team</span></div>
@@ -257,7 +266,7 @@ function HomePage() {
                                 <Accordion.Item eventKey="1" className='bg-transparent border-0 text-white'>
                                     <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How does the <span className='text-secondary-1 mx-2'>staking pool</span>works?</div></Accordion.Header>
                                     <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
-                                        WELDOST NFT  (WMP) owners can stake their PASS in the staking pool for 36 months, these yields passive income every 30 days.  Each WELDOST NFT brings different bonuses based on their value. Please refer to whitepaper for detailed percentage.
+                                        WELDOST NFT owners can stake their PASS in the staking pool for 36 months, these yields passive income every 30 days. Each WELDOST NFT brings different bonuses based on their value. Please refer to whitepaper for detailed percentage.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2" className='bg-transparent border-0 text-white'>
@@ -320,6 +329,12 @@ Contact Us: Reach out to us at: contact@weldost.com to report the issue and seek
                                     <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>How to book your <span className='text-secondary-1 mx-2'>accomodation ?</span></div></Accordion.Header>
                                     <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
                                         Contact us by email when you are ready to travel and bought your pass, We will send you all the informations.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="12" className='bg-transparent border-0 text-white'>
+                                    <Accordion.Header className='bg-transparent text-white fs-4 fw-bold'><div>Why this project is <span className='text-secondary-1 mx-2'>unique?</span></div></Accordion.Header>
+                                    <Accordion.Body className='bg-transparent text-white fs-5 text-start'>
+                                        This project is the first in the world to connect the offline and digital worlds in an unique way. Your NFT acting as a pass to travel and earn bonus at the same time and not losing values like many other NFT s on market.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>

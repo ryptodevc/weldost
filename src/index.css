@@ -62,6 +62,10 @@ body {
   font-weight: 700;
 }
 
+.NFTCard {
+  width: 320px;
+}
+
 .NFTCard .button-section {
   bottom: -4.5%;
 }
